@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Routefor1</class>
+ <widget class="QMainWindow" name="Routefor1">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>One Route</string>
+  </property>
+  <widget class="QWidget" name="Route1">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="2">
+     <widget class="QTextEdit" name="printResult">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>300</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="backButton">
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>12312321</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="routeLabel">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>One route</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="startLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>5</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>5</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Where would you like to start?</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="endLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Where would you like to end?</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="FindButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Find Route</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QPlainTextEdit" name="endInput">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QPlainTextEdit" name="startInput">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
