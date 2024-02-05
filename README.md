@@ -2,7 +2,7 @@
  Simplifying school navigation with smart routes.
 
 ## Description
-Ernest Bevin Route Finder is a project aimed at simplifying navigation within Ernest Bevin College using advanced routing algorithms and real-time data analysis. Say goodbye to crowded corridors and hello to efficient routes!
+Ernest Bevin Route Finder is a project aimed at simplifying navigation within Ernest Bevin College using advanced routing algorithms and real-time data analysis. Say goodbye to crowded corridors and hello to efficient routes! For a more indepth break down of the entire project refer to my Project report, "Write up.pdf"
 
 ## Features
 - Utilizes Dijkstra's algorithm for optimal pathfinding.
