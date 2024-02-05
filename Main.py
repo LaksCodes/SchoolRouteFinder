@@ -4,6 +4,9 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow
 from PyQt5.uic import loadUi
 
+
+#Initialise the main page GUI
+
 class MainPage(QMainWindow):
     
     def __init__(self):
@@ -84,7 +87,7 @@ class MainPage(QMainWindow):
             Route = Route[:-1]
             self.outputResult.setText(Route)
 
-
+#Create Node map with Edges and Nodes
 
 class Edge():
 
@@ -108,6 +111,7 @@ class Node():
         otherPriority = other.minDistance
         return selfPriority < otherPriority
 
+#Main Dijkstras algorithm
 
 class Dijkstras():
     
@@ -144,7 +148,8 @@ class Dijkstras():
         return self.route
 
 
-
+#Function to read Rooms.txt file
+    
 def nodefinder():
     global nodes
     nodes = []
@@ -152,6 +157,8 @@ def nodefinder():
         for i in f:
               nodes.append(i)
    
+#Function to create Graph based on Nodes and edges
+
 
 def createGraph():
     nodeId = 1
@@ -257,6 +264,7 @@ def createGraph():
                 
         return(graph)
 
+#Function to calculate the route
 
 def retrieveRoute(start, end):
     
@@ -278,7 +286,7 @@ def retrieveRoute(start, end):
                 route = aRoute.routeToEndVertex(node)
         return route
 
-
+#Function to check which row of the excel file to read based on the Tutor Group selected
 
 def checkTutor(tutee):
     
@@ -308,7 +316,9 @@ def checkTutor(tutee):
     else:
         pass
     return start, row
- 
+
+
+#Sort Invalid values
 
 def roomNum(val):
     
@@ -416,6 +426,8 @@ def roomNum(val):
     return val
      
 
+#Function to read Whole.csv file
+
 def reader(row, start):
     
     graph = createGraph()
@@ -477,6 +489,8 @@ def reader(row, start):
     Week = [Mon,Tue,Wed,Thu,Fri]
     return Week
 
+#Function to create a word document with the fastest routes 
+
 def writeToWord(week,tutorGroup):
 
     document = Document()
@@ -522,9 +536,10 @@ def writeToWord(week,tutorGroup):
 
     document.save('Timetable for ' + tutorGroup + '.docx')
 
-    
-        
-app = QApplication(sys.argv)
-widget = MainPage()
-widget.show()
-sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    widget = MainPage()
+    widget.show()
+    sys.exit(app.exec_())
